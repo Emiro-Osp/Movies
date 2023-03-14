@@ -1,0 +1,18 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+    text-shadow: 2px 2px #ccc;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    } }
+
