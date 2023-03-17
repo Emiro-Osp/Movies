@@ -1,7 +1,12 @@
+import { useParams } from "react-router-dom";
 import movie from "./movie.json";
-import styles from "./MovieDetails.module.css"
+import styles from "./MovieDetails.module.css";
 
 export function MovieDetails(){
+
+    let { movieId } = useParams();
+    console.log(movieId);
+
     const imageUrl = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
     return (
     <div className={styles.detailscontainer}>
